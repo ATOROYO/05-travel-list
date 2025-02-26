@@ -6,12 +6,14 @@ function Logo() {
 
 function Form() {
   return (
-    <div>
+    <div className="add-form">
       <h3>What do you need for your 😍 trip?</h3>
     </div>
   );
 }
 
-function PackingList() {}
+function PackingList() {
+  return <div className="list">LIST</div>;
+}
 
 function Stats() {}
