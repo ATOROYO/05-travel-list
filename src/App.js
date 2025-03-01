@@ -42,8 +42,8 @@ function PackingList() {
 function Item({ item }) {
   return (
     <li>
-      <span>
-        <input type="checkbox" checked={item.packed} />
+      <span style={item.packed ? { textDecoration: "line-through" } : {}}>
+        <input type="checkbox" />
         {item.quantity} {item.description}
       </span>
       <button className="remove">❌</button>
